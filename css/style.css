@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #424551;
+}
+.container{
+    max-width: 830px;
+    margin: 0 auto;
+}
+.article_1_title{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    margin-bottom:40px ;
+}
+.article_1_text{
+    line-height: 160%;
+    margin-bottom: 48px;
+}
+.article_list_title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 24px;
+}
+.article_list{
+    margin-bottom: 184px;
+}
+.article_list_item li{
+    padding-left: 26px;
+    line-height: 160%;
+    background: url("../img/check.png") 0 6px no-repeat;
+}
+.article_list_item li:not(:last-child) {
+    margin-bottom: 4px;
+}
+.article_3_under_title{
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+.article_3_title{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    margin-bottom: 18px;
+}
+.article_3_role_name{
+    font-size: 20px;
+    line-height: 150%;
+    color: #787A80;
+    margin-bottom: 32px;
+}
+.article_3_list{
+    font-weight: 700;
+    line-height: 160%;
+    color: #424551;
+    margin-bottom: 32px;
+}
+.article_3_list li:not(:last-child)
+{
+    margin-bottom: 4px;
+}
+.article_3_list li:first-child::before{
+    background: url("../img/icons/star.png")  0 0 no-repeat;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-left: 20px;
+}
+.article_3_list li:nth-child(2)::before{
+    background: url("../img/icons/play.png")  0 0 no-repeat;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-left: 20px;
+}
+
+.article_3_list li:nth-child(3)::before{
+    background: url("../img/icons/profile.png")  0 0 no-repeat;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-left: 20px;
+}
+.article_3_text{
+    line-height: 160%;
+}
+
+
+.part_2{
+    max-width: 810px;
+    margin: 0 auto;
+}
+.part_2 h1{
+    margin-top: 33px;
+    font-weight: 900;
+    font-size: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game{
+    border: 3px solid black;
+    height: 300px;
+    width: 300px;
+}
+
+.icon{
+    width: 16px;
+    height: 16px;
+    border: 1px solid blue;
+    background-color: cyan;
+}
+.second{
+    margin-top: 15px;
+    border: 1px solid black;
+    background-color: blue;
+    color: yellow;
+    display: none;
+    width:16px;
+    height:30px;
+}
+.third{
+    width: 55px;
+    height: 15px;
+    background-color: aqua;
+    margin-top: 15px;
+    margin-left: 15px;
+    display: none;
+    position: absolute;
+
+
+}
+.th_4{
+    width: 20px;
+    height: 99px;
+    background-color: black;
+    margin-left: 55px;
+    display: none;
+    position: absolute;
+
+}
+.th_5{
+    width: 90px;
+    height: 15px;
+    background-color: aqua;
+    margin-left: 19px;
+    margin-top: 85px;
+    display: none;
+    position: absolute;
+
+}
+.th_6{
+    width: 15px;
+    height: 85px;
+    background-color: crimson;
+    position: absolute;
+    margin-left: 90px;
+    display: none;
+}
+.th_7{
+    width: 95px;
+    height: 15px;
+    background-color: antiquewhite;
+    position: absolute;
+    margin-top: 85px;
+    display: none;
+
+}
+.th_8{
+    width: 12px;
+    height: 65px;
+    background-color: brown;
+    margin-left: 83px;
+    position: absolute;
+    margin-top: 15px;
+    display: none;
+}
+
+.th_9{
+    width: 13px;
+    height: 13px;
+    background-color: chocolate;
+    position: absolute;
+    margin-top: 65px;
+    display: none;
+}
+.th_10 button{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    position: absolute;
+    margin-top:-212px;
+    border-radius: 22px;
+    margin-left: -155px;
+    display: none;
+}
+
+.icon:hover .second{
+   background-color: yellow;
+    display: block;
+}
+.second:hover .third {
+    display: block;
+}
+.third:hover .th_4{
+    display: block;
+}
+.th_4:hover .th_5{
+    display: block;
+}
+.th_5:hover .th_6{
+    display: block;
+}
+.th_6:hover .th_7{
+    display: block;
+}
+.th_7:hover .th_8{
+    display: block;
+}
+.th_8:hover .th_9{
+    display: block;
+}
+.th_9:hover .th_10 button{
+    display: block;
+}
+.th9:hover .third .th_5{
+    display: none;
+}
+.acive{
+    margin-top: 20px;
+}
+.acive li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.acive li:last-child:active{
+    color: red;
+    flex: 22;
+}
+.acive li:first-child:active{
+    color: yellow;
+    font-size: 33px;
+}
+.acive li:nth-child(2):active{
+    color: violet;
+    font-size: 25px;
+}
+.acive p{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-size: 44px;
+}
+
+.visited{
+    margin-top: 15px;
+}
+
+.visited li:not(:last-child){
+    margin-bottom: 10px;
+}
+.visited p{
+    font-size: 44px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.visited a:visited{
+    color: violet;
+}
+
+.example{
+    margin-top: 10px;
+}
+
+.example p{
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.example li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.example li:first-of-type{
+    color: yellow;
+}
+
+
